@@ -7,15 +7,22 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PexesoView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(lineWidth: 3)
+            Text("Hello, world!")
+                .bold()
+                .italic()
+        }
+        .padding()
+        .foregroundColor(.cyan)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        PexesoView()
     }
 }

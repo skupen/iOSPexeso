@@ -11,7 +11,7 @@ import SwiftUI
 struct PexesoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PexesoView()
         }
     }
 }
