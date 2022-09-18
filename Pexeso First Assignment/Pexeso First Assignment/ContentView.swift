@@ -7,15 +7,35 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AssignmentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Memorize")
+                .font(.largeTitle)
+            CardView()
+            
+        }
+        .padding(.all)
+    }
+}
+
+struct CardView: View {
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 2)
+            Text("🏎")
+                .font(.largeTitle)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AssignmentView()
+            .preferredColorScheme(.light)
+            .previewDevice("iPhone 12")
+        AssignmentView()
+            .preferredColorScheme(.dark)
+            .previewDevice("iPhone 12")
     }
 }

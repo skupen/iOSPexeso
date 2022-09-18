@@ -14,6 +14,16 @@
 		A6E6B0AD28BEBDF50096FE0C /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = A6E6B0AC28BEBDF50096FE0C /* readme.md */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A6E6B0CC28CA69C30096FE0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6E6B0C828CA69C30096FE0C /* Pexeso First Assignment.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A6E6B0B728CA69C20096FE0C;
+			remoteInfo = "Pexeso First Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A6E6B09B28BEADA70096FE0C /* Pexeso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pexeso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E6B09E28BEADA70096FE0C /* PexesoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexesoApp.swift; sourceTree = "<group>"; };
@@ -21,6 +31,7 @@
 		A6E6B0A228BEADAB0096FE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6E6B0A528BEADAB0096FE0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6E6B0AC28BEBDF50096FE0C /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		A6E6B0C828CA69C30096FE0C /* Pexeso First Assignment.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Pexeso First Assignment.xcodeproj"; path = "Pexeso First Assignment/Pexeso First Assignment.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +48,7 @@
 		A6E6B09228BEADA70096FE0C = {
 			isa = PBXGroup;
 			children = (
+				A6E6B0C828CA69C30096FE0C /* Pexeso First Assignment.xcodeproj */,
 				A6E6B0AC28BEBDF50096FE0C /* readme.md */,
 				A6E6B09D28BEADA70096FE0C /* Pexeso */,
 				A6E6B09C28BEADA70096FE0C /* Products */,
@@ -68,6 +80,14 @@
 				A6E6B0A528BEADAB0096FE0C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6E6B0C928CA69C30096FE0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6E6B0CD28CA69C30096FE0C /* Pexeso First Assignment.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,12 +136,28 @@
 			mainGroup = A6E6B09228BEADA70096FE0C;
 			productRefGroup = A6E6B09C28BEADA70096FE0C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A6E6B0C928CA69C30096FE0C /* Products */;
+					ProjectRef = A6E6B0C828CA69C30096FE0C /* Pexeso First Assignment.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A6E6B09A28BEADA70096FE0C /* Pexeso */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A6E6B0CD28CA69C30096FE0C /* Pexeso First Assignment.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Pexeso First Assignment.app";
+			remoteRef = A6E6B0CC28CA69C30096FE0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A6E6B09928BEADA70096FE0C /* Resources */ = {
