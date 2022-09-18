@@ -8,22 +8,35 @@
 import SwiftUI
 
 struct AssignmentView: View {
+    @State var emojis = ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎", "🚓", "🚑"]
     var body: some View {
         VStack {
             Text("Memorize")
                 .font(.largeTitle)
-            CardView()
-            
+            Spacer()
+            LazyVGrid(columns: [GridItem(.adaptive(minimum:70))]) {
+                ForEach(emojis, id: \.self) {
+                    emoji in
+                    CardView(content: emoji).aspectRatio(2/3, contentMode: .fit)
+                }
+            }
         }
         .padding(.all)
     }
 }
 
 struct CardView: View {
+    var content: String
+    
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 2)
-            Text("🏎")
+            RoundedRectangle(cornerRadius: 10)
+                .fill()
+                .foregroundColor(.white)
+            RoundedRectangle(cornerRadius: 10)
+                .strokeBorder(lineWidth: 3)
+                .foregroundColor(.cyan)
+            Text(content)
                 .font(.largeTitle)
         }
     }
