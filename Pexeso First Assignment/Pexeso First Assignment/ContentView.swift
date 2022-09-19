@@ -11,24 +11,78 @@ struct AssignmentView: View {
     @State var emojis = ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎", "🚓", "🚑"]
     var body: some View {
         VStack {
-            Text("Memorize")
-                .font(.largeTitle)
-            Spacer()
-            LazyVGrid(columns: [GridItem(.adaptive(minimum:70))]) {
-                ForEach(emojis, id: \.self) {
-                    emoji in
-                    CardView(content: emoji).aspectRatio(2/3, contentMode: .fit)
+            ScrollView {
+                VStack() {
+                    Text("Memorize")
+                        .font(.largeTitle)
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum:70))]) {
+                        ForEach(emojis, id: \.self) {
+                            emoji in
+                            CardView(content: emoji).aspectRatio(2/3, contentMode: .fit)
+                        }
+                    }
                 }
+                .padding(.all)
+            }
+            HStack(alignment: .bottom) {
+                carButton
+                Spacer()
+                animalsButton
+                Spacer()
+                sportsButton
+            }
+            .padding(.horizontal)
+            
+        }
+    }
+    
+    var carButton: some View {
+        Button{
+            emojis = ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎", "🚓", "🚑"]
+            emojis.shuffle()
+        } label: {
+            VStack {
+                Image(systemName: "car.fill")
+                    .font(.largeTitle)
+                Text("Cars")
+                    .font(.subheadline)
             }
         }
-        .padding(.all)
+    }
+    
+    var animalsButton: some View {
+        Button{
+            emojis = ["🐢", "🐭", "🦆", "🦄", "🐝", "🐍", "🐞", "🦋", "🦖"]
+            emojis.shuffle()
+        } label: {
+            VStack {
+                Image(systemName: "tortoise.fill")
+                    .font(.largeTitle)
+                Text("Animals")
+                    .font(.subheadline)
+            }
+        }
+    }
+    
+    var sportsButton: some View {
+        Button{
+            emojis = ["⚽️", "🏀", "🏂", "⛳️", "🪃", "🥋", "🥊", "🏒", "🏹", "🥌"]
+            emojis.shuffle()
+        } label: {
+            VStack {
+                Image(systemName: "sportscourt.fill")
+                    .font(.largeTitle)
+                Text("Sports")
+                    .font(.subheadline)
+            }
+        }
     }
 }
 
 struct CardView: View {
     var content: String
     
-    @State var isTurned = false
+    @State var isTurned = true
     
     var body: some View {
         ZStack {
