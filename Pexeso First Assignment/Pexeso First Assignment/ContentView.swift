@@ -28,16 +28,26 @@ struct AssignmentView: View {
 struct CardView: View {
     var content: String
     
+    @State var isTurned = false
+    
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .fill()
-                .foregroundColor(.white)
-            RoundedRectangle(cornerRadius: 10)
-                .strokeBorder(lineWidth: 3)
-                .foregroundColor(.cyan)
-            Text(content)
-                .font(.largeTitle)
+            if isTurned {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill()
+                        .foregroundColor(.white)
+                    RoundedRectangle(cornerRadius: 10)
+                        .strokeBorder(lineWidth: 3)
+                        .foregroundColor(.cyan)
+                    Text(content)
+                        .font(.largeTitle)
+            } else {
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill()
+                        .foregroundColor(.cyan)
+            }
+        }.onTapGesture(count: 1) {
+            isTurned = !isTurned
         }
     }
 }
