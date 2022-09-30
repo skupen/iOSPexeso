@@ -12,6 +12,8 @@
 		A6E6B0A328BEADAB0096FE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E6B0A228BEADAB0096FE0C /* Assets.xcassets */; };
 		A6E6B0A628BEADAB0096FE0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E6B0A528BEADAB0096FE0C /* Preview Assets.xcassets */; };
 		A6E6B0AD28BEBDF50096FE0C /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = A6E6B0AC28BEBDF50096FE0C /* readme.md */; };
+		A6EFBFF928E7332F00637BA5 /* PexesoGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBFF828E7332F00637BA5 /* PexesoGame.swift */; };
+		A6EFBFFB28E7358800637BA5 /* EmojiPexesoGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EFBFFA28E7358800637BA5 /* EmojiPexesoGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		A6E6B0A528BEADAB0096FE0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6E6B0AC28BEBDF50096FE0C /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		A6E6B0C828CA69C30096FE0C /* Pexeso First Assignment.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Pexeso First Assignment.xcodeproj"; path = "Pexeso First Assignment/Pexeso First Assignment.xcodeproj"; sourceTree = "<group>"; };
+		A6EFBFF828E7332F00637BA5 /* PexesoGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexesoGame.swift; sourceTree = "<group>"; };
+		A6EFBFFA28E7358800637BA5 /* EmojiPexesoGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPexesoGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			children = (
 				A6E6B09E28BEADA70096FE0C /* PexesoApp.swift */,
 				A6E6B0A028BEADA70096FE0C /* ContentView.swift */,
+				A6EFBFF828E7332F00637BA5 /* PexesoGame.swift */,
+				A6EFBFFA28E7358800637BA5 /* EmojiPexesoGame.swift */,
 				A6E6B0A228BEADAB0096FE0C /* Assets.xcassets */,
 				A6E6B0A428BEADAB0096FE0C /* Preview Content */,
 			);
@@ -179,6 +185,8 @@
 			files = (
 				A6E6B0A128BEADA70096FE0C /* ContentView.swift in Sources */,
 				A6E6B09F28BEADA70096FE0C /* PexesoApp.swift in Sources */,
+				A6EFBFFB28E7358800637BA5 /* EmojiPexesoGame.swift in Sources */,
+				A6EFBFF928E7332F00637BA5 /* PexesoGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

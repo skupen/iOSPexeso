@@ -10,7 +10,7 @@ import SwiftUI
 struct PexesoView: View {
     
     let emojis = ["🚀", "🛸", "🛩", "🛥", "🚅", "🚢", "💺", "🚖", "🚁", "ad", "sf", "asd", "saffda", "asdasd"]
-    @State var emojiCount = 4
+    @State var emojiCount = 14
     
     var body: some View {
         VStack {
@@ -23,37 +23,8 @@ struct PexesoView: View {
             }
             .foregroundColor(.cyan)
             .padding()
-            Spacer()
-            HStack {
-                remove
-                Spacer()
-                add
-            }
             .padding(.horizontal)
             .font(.largeTitle)
-        }
-    }
-    
-        var remove: some View {
-            Button {
-                if emojiCount > 1 {
-                    emojiCount -= 1
-                    }
-            } label: {
-                VStack {
-                    Image(systemName: "minus.circle")
-                }
-            }
-        }
-        var add: some View {
-            Button {
-                if emojiCount < emojis.count {
-                    emojiCount += 1
-                    }
-            } label: {
-                VStack {
-                    Image(systemName: "plus.circle")
-                }
         }
     }
 }

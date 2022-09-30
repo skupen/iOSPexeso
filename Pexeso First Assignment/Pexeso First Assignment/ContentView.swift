@@ -15,7 +15,7 @@ struct AssignmentView: View {
                 VStack() {
                     Text("Memorize")
                         .font(.largeTitle)
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum:70))]) {
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum:100))]) {
                         ForEach(emojis, id: \.self) {
                             emoji in
                             CardView(content: emoji).aspectRatio(2/3, contentMode: .fit)
@@ -82,7 +82,7 @@ struct AssignmentView: View {
 struct CardView: View {
     var content: String
     
-    @State var isTurned = true
+    @State var isTurned = false
     
     var body: some View {
         ZStack {
